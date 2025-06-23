@@ -1,6 +1,13 @@
 "use client"
 
+import {  Saira_Stencil_One } from "next/font/google";
 import {styled} from "styled-components"
+
+const sairaStencil = Saira_Stencil_One({
+  weight: [ '400', ]
+ , subsets: ["latin"]
+});
+
 
 const Tagheader = styled.header`
 display: flex;
@@ -18,9 +25,8 @@ line-height: 150%;
 export function Header(){
     return(
         <Tagheader>
-            <Logo>
-              teste teste 
-              
+            <Logo className={sairaStencil.className}>
+            CAPPUTEENO
             </Logo>
             <div>
 
